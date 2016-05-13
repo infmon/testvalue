@@ -144,7 +144,7 @@ function main {
          update_start)
             ;;
 
-         updat_eend)
+         update_end)
             ;;
          
          selftest)
@@ -153,6 +153,7 @@ function main {
          #--- custom commands
          configure)
             [ -z "${TEST_VALUE:-}" ] || save_environment "TEST_VALUE" "${TEST_VALUE}"
+            ;;
 
             
          #--- unrecognised commands
